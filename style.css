@@ -1,24 +1,42 @@
 body{
-    background-color: salmon;
+    width:100vw;
+    height: 100wh;
 }
 
-p{
-    color: aquamarine;
-    font-size: 20px;
-    font-weight: bold;
+
+#container{
+    background-color: #EEEEEE;
+    width: 100vw; 
+    height: 50vh;
+
+    /*. display flex is the kesy word to setup autolayout */
+    display: flex;
+    /*. what direction the children will face */
+    flex-direction: row;
+    /*.we center on both axis */
+    justify-content: center;
+    align-items: center;
+
+    /*. we add a gap between the boxes */
+    gap: 20px;
 }
 
-li{
-    color: white;
+.box{
+    background-color: #888888;
+    width: 200px;
+    height: 200px;  
 }
 
-#cookies{
-    font-size: 30px;
+.card{
+    background-color: #C9E39A;
+    padding: 16px;
+    border-radius: 8px;
+    width: 20%;
 }
 
-.black-bg{
-    background-color: black;
-    color: white;
-
-    padding: 0px 32px;
+.section{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
 }
